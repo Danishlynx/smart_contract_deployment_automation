@@ -1,0 +1,44 @@
+name: Deploy Upgrade (ewc)
+
+ 
+on: 
+  workflow_dispatch:
+    inputs:      
+        network:
+          description: 'Select the network to deploy:'
+          options:
+          - ewc
+          required: true
+       
+
+env:
+  PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+
+jobs:
+  deploy:
+    name: Deploy Upgrade (ewc)
+
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          
+      - name: Install dependencies 
+        run: npm ci
+        
+      - name: Installing hardhat
+        run: npm install -g hardhat
+        
+      - name: Compile contract
+        run: npx hardhat compile
+
+      - name: Test contract
+        run: npx hardhat test
+
+      - name: Deploy contract
+        run: npx hardhat run deploy_Upgrade/deploy_Upgrade.js --network ewc
