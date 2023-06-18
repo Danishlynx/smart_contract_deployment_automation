@@ -1,0 +1,149 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/mnt/c/Users/danis/Desktop/as/ewt/smart-contract-deployment/contracts/Lock_V2.sol": {
+      "lastModificationDate": 1679457821044,
+      "contentHash": "475d06e685c082dffcb8b5f9f1b2c8db",
+      "sourceName": "contracts/Lock_V2.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Lock2"
+      ]
+    },
+    "/mnt/c/Users/danis/Desktop/as/ewt/smart-contract-deployment/contracts/Lock_v1.sol": {
+      "lastModificationDate": 1679457821044,
+      "contentHash": "253075bb94abd5c09a625db80fd93f7c",
+      "sourceName": "contracts/Lock_v1.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Lock1"
+      ]
+    },
+    "/mnt/c/Users/danis/Desktop/as/ewt/smart-contract-deployment/contracts/ProxyLock.sol": {
+      "lastModificationDate": 1679457821045,
+      "contentHash": "0a09cf38d527fe1f018682c5466ef33b",
+      "sourceName": "contracts/ProxyLock.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ProxyLock"
+      ]
+    },
+    "/mnt/c/Users/danis/Desktop/as/ewt/smart-contract-deployment/contracts/Sample.sol": {
+      "lastModificationDate": 1679457821046,
+      "contentHash": "774b3a8e03fa27e82c26e7eaa645daae",
+      "sourceName": "contracts/Sample.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Box"
+      ]
+    }
+  }
+}

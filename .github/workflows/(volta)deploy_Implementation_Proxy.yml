@@ -1,0 +1,40 @@
+name: Deploy Implementation + Proxy (volta)
+
+on:
+  push:
+    branches:
+      - volta
+    paths:
+      - 'deploy_Implementation_Proxy/**'
+
+
+env:
+  PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+
+jobs:
+  deploy:
+    name: Deploy Implementation + Proxy (volta)
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          
+      - name: Install dependencies 
+        run: npm ci
+        
+      - name: Installing hardhat
+        run: npm install -g hardhat
+        
+      - name: Compile contract
+        run: npx hardhat compile
+
+      - name: Test contract
+        run: npx hardhat test
+
+      - name: Deploy contract
+        run: npx hardhat run deploy_Implementation_Proxy/deploy_Implementation_Proxy.js --network volta
